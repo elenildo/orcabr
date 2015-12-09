@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="1" >
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="3dp"
+        android:layout_marginRight="3dp"
+        android:background="#ffd0e8ff" >
+
+        <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent" >
+
+            <TextView
+                android:id="@+id/lbl_cat_reg"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_column="0"
+                android:padding="5dp"
+                android:text="Categoria"
+                android:textSize="20dp" />
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_column="29"
+                android:text="@string/symbol_money" />
+
+            <TextView
+                android:id="@+id/lbl_reg_valor"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="5dp"
+                android:text="TextView" />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent" >
+
+            <TextView
+                android:id="@+id/lbl_Id_reg"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="5sp"
+                android:visibility="invisible" />
+
+            <TextView
+                android:id="@+id/lbl_tipo_reg"
+                android:textSize="1sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:visibility="invisible" />
+            
+            <TextView
+                android:id="@+id/lbl_id_cat"
+                android:textSize="1sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:visibility="invisible" />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent" >
+
+            <TextView
+                android:id="@+id/lbl_data_reg"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_column="0"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                
+                android:text="12/12/2012" />
+
+            <TextView
+                android:id="@+id/lbl_status_reg"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_column="30"
+                android:paddingRight="10dp"
+                
+                android:text="R" />
+        </TableRow>
+    </TableLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="3dp"
+        android:layout_marginLeft="3dp"
+        android:layout_marginRight="3dp"
+        android:background="#ffd0e8ff"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/lbl_info_obs"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="3dp"
+            android:textStyle="italic" />
+
+    </LinearLayout>
+
+</LinearLayout>

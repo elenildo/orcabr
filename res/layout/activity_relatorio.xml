@@ -1,0 +1,122 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#a10c478d"
+    android:orientation="vertical"
+    tools:context=".RelatorioActivity" >
+
+    <LinearLayout
+        android:padding="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:id="@+id/lbl_rel_contas"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/lbl_rel_contas"
+            android:textColor="#FFF"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/lbl_rel_saldo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:text="@string/lbl_rel_saldo"
+            android:textColor="#FFF"
+            android:textSize="20sp" />
+
+    </LinearLayout>
+    
+    <LinearLayout
+        android:padding="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:id="@+id/lbl_rel_receitas"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/lbl_rel_receitas"
+            android:textColor="#FFF"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/lbl_rel_total_receitas"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:text="@string/lbl_rel_total_receitas"
+            android:textColor="#FFF"
+            android:textSize="20sp" />
+
+    </LinearLayout>
+	
+    <LinearLayout
+        android:padding="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:id="@+id/lbl_rel_despesas"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/lbl_rel_despesas"
+            android:textColor="#FFF"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/lbl_rel_total_despesas"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:text="@string/lbl_rel_total_despesas"
+            android:textColor="#FFF"
+            android:textSize="20sp" />
+
+    </LinearLayout>
+	
+    <LinearLayout
+        
+        android:paddingTop="30dp"
+        android:paddingLeft="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+	    
+	    <TextView
+	        android:id="@+id/lbl_rel_saldo_total"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:text="@string/txt_report_balance"
+	        android:textColor="#FFF"
+	        android:textSize="20sp" />
+	    
+	    <TextView
+	        android:id="@+id/lbl_rel_saldo_atual"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:text="0"
+	        android:layout_marginLeft="15dp"
+	        android:textColor="#FFF"
+	        android:textSize="20sp" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <Button
+            android:id="@+id/btn_rel_ok"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:text="Ok"
+            android:onClick="fecharRelatorio"
+            android:textColor="#FFF" />
+
+    </RelativeLayout>
+
+</LinearLayout>

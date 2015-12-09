@@ -1,0 +1,218 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#a10c478d"
+    android:orientation="vertical"
+    android:padding="5dp" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:paddingBottom="10dp" >
+
+        <TextView
+            android:id="@+id/lbl_opcoes_titulo"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="@string/txt_movements_title"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="#FFF"
+            android:textSize="30sp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:paddingBottom="0dp" >
+
+        <TextView
+            android:id="@+id/txt_mostra_data"
+            style="@style/label"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:text="@string/lanca_lblData"
+            android:textColor="#FFF"
+            android:textSize="20sp" />
+
+        <Button
+            android:id="@+id/btn_Data"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:text="Data"
+            android:textColor="#FFF"
+            android:textSize="20sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:paddingBottom="0dp" >
+
+        <TextView
+            android:id="@+id/lbl_total"
+            style="@style/label"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:text="@string/lanca_lblCategoria"
+            android:textColor="#FFF"
+            android:textSize="20sp" />
+
+        <Button
+            android:id="@+id/btnCategorias"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:onClick="listarCategorias"
+            android:text="@string/lanca_btnCategoria"
+            android:textColor="#FFF"
+            android:textSize="20sp" />
+
+        <EditText
+            android:id="@+id/txt_Id_categoria"
+            android:layout_width="10dp"
+            android:layout_height="wrap_content"
+            android:background="#fff"
+            android:ems="10"
+            android:inputType="number|text"
+            android:visibility="invisible" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:paddingBottom="0dp"
+        android:paddingRight="10dp" >
+
+        <TextView
+            android:id="@+id/txt_email_paswd"
+            style="@style/label"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:text="@string/lanca_lblValor"
+            android:textColor="#FFF"
+            android:textSize="20sp" />
+
+        <EditText
+            android:id="@+id/txtValor"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:background="#fff"
+            android:ems="10"
+            android:inputType="numberDecimal"
+            android:textSize="20sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:paddingBottom="0dp"
+        android:paddingLeft="50dp"
+        android:paddingRight="50dp" >
+
+        <CheckBox
+            android:id="@+id/chkRegistrado"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="@string/lanca_chkRegistrado"
+            android:textColor="#FFF"
+            android:textSize="20sp" />
+
+    </LinearLayout>
+
+   <!-- <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="10dp"
+        android:paddingLeft="70dp"
+        android:paddingRight="70dp" >
+
+        <RadioGroup
+            android:orientation="horizontal"
+            android:id="@+id/radioGroup1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+        </RadioGroup>
+
+    </LinearLayout>-->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="horizontal"
+        android:paddingBottom="10dp"
+        android:layout_weight="1"
+        android:paddingRight="10dp" >
+
+        <TextView
+            android:id="@+id/textView5"
+            style="@style/label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/lanca_lblObs"
+            android:textColor="#FFF"
+            android:textSize="18sp" />
+
+        <EditText
+            android:id="@+id/txtObs"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#fff"
+            android:ems="10"
+            android:inputType="text|textImeMultiLine" >
+
+            <requestFocus />
+        </EditText>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        android:paddingLeft="50dp"
+        android:layout_weight="1"
+        android:paddingRight="50dp" >
+
+        <Button
+            android:id="@+id/btn_cadastrar_lancamento"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:onClick="cadastrarClick"
+            android:text="@string/lanca_btnOk"
+            android:textColor="#FFF"
+            android:textSize="20sp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:paddingLeft="50dp"
+        android:paddingRight="50dp" >
+
+        <Button
+            android:id="@+id/btn_excluir_reg"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:onClick="excluirRegistro"
+            android:text="@string/btn_conta_excluir"
+            android:textColor="#FFF"
+            android:textSize="20sp"
+            android:visibility="invisible" />
+
+    </LinearLayout>
+
+</LinearLayout>

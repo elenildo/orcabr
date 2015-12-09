@@ -1,0 +1,63 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#a10c478d"
+    tools:context=".BackupActivity" >
+
+     <LinearLayout
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/lbl_backup_titulo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:text="@string/title_activity_backup"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="#FFF"
+            android:textSize="30sp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:paddingLeft="60dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        </LinearLayout>
+
+  <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingTop="20dp"
+        android:paddingLeft="50dp"
+        android:paddingRight="50dp" >
+
+        <Button
+            android:id="@+id/btn_criar_backup"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="18dp"
+            android:text="@string/btn_make_backup"
+            android:textColor="#FFF"
+            android:onClick="exportDB"
+            android:textSize="20sp" />
+
+        <Button
+            android:id="@+id/btn_restaurar_dados"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="18dp"
+            android:text="@string/btn_restore_backup"
+            android:textColor="#FFF"
+            android:onClick="restaurarBackup"
+            android:textSize="20sp" />
+
+    </LinearLayout>
+
+</LinearLayout>

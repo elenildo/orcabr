@@ -1,0 +1,124 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity"
+    android:background="#a10c478d">
+
+    <LinearLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <ImageView
+            android:id="@+id/imgIcon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_launcher" />
+
+        <TextView
+            android:id="@+id/lbl_opcoes_titulo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:text="@string/app_name"
+            android:textColor="#FFF"
+            android:textSize="30sp"
+            android:textAppearance="?android:attr/textAppearanceLarge"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="60dp" >
+
+        <TextView
+            android:id="@+id/main_descricao"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/txt_descrition_main"
+            android:textStyle="bold" />
+
+        </LinearLayout>
+
+    <LinearLayout
+        
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:paddingLeft="50dp"
+        android:paddingRight="50dp"
+        android:paddingBottom="5dp"
+        android:paddingTop="5dp" >
+
+        <Button
+            android:id="@+id/btn_cadastrar_lancamento"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:onClick="abrirNovaDespesa"
+            android:padding="0dp"
+            android:text="@string/main_novaDespesa"
+            android:textColor="#FFF"
+            android:textSize="20sp" />
+
+        <Button
+            android:id="@+id/btnSenhas"
+            android:layout_weight="1"
+            android:onClick="abrirNovaReceita"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/main_novaReceita"
+            android:textColor="#FFF"
+            android:textSize="20sp"
+            android:padding="0dp"/>
+
+        <Button
+            android:onClick="abrirListaRegistros"
+            android:layout_weight="1"
+            android:id="@+id/btnExibirLancamentos"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/main_meusLancamentos"
+            android:textColor="#FFF"
+            android:textSize="20sp"
+            android:padding="0dp"/>
+
+        <Button
+            android:id="@+id/btnExibirGraficos"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/main_meusGraficos"
+            android:onClick="abrirGraficos"
+            android:textSize="20sp"
+            android:padding="0dp"
+            android:textColor="#FFF"/>
+
+        <Button
+            android:id="@+id/btnExibirRelatorio"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="0dp"
+            android:text="@string/main_relatorios"
+            android:textColor="#FFF"
+            android:onClick="abrirRelatorio"
+            android:textSize="20sp" />
+
+        <Button
+            android:id="@+id/btn_main_opcoes"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="0dp"
+            android:text="@string/main_opcoes"
+            android:textColor="#FFF"
+            android:onClick="abrirOpcoes"
+            android:textSize="20sp" />
+
+    </LinearLayout>
+
+</LinearLayout>

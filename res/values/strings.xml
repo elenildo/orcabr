@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">OrcaBR</string>
+    <string name="main_descricao">OrcaBR</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="main_novaReceita">New Income</string>
+    <string name="main_novaDespesa">New Expense</string>
+    <string name="main_meusLancamentos">Movements</string>
+    <string name="main_meusGraficos">Charts</string>
+    <string name="main_balancos">Balance</string>
+    <string name="main_configuracoes">Settings</string>
+    <string name="main_nova_receita">New Income</string>
+    <string name="main_nova_despesa">New expense</string>
+    <string name="title_activity_lancamento">Movements</string>
+    <string name="lanca_lblData">Date:</string>
+    <string name="lanca_lblCategoria">Category:</string>
+    <string name="lanca_lblValor">Value:</string>
+    <string name="lanca_lblRegistrado">Registered?</string>
+    <string name="lanca_radSim">Yes</string>
+    <string name="lanca_radNao">No</string>
+    <string name="lanca_lblObs">Obs.</string>
+    <string name="lanca_btnOk">OK</string>
+    <string name="lanca_chkRegistrado">Registered?</string>
+    <string name="title_activity_listar_categoria">Categories</string>
+    <string name="lanca_btnCategoria">Category</string>
+    <string name="title_activity_calendar">Calendar</string>
+    <string name="title_activity_nova_categoria">New Category</string>
+    <string name="title_activity_listar_registros">Movements</string>
+    <string name="title_activity_graph">Charts</string>
+    <string name="title_activity_conta">Accounts</string>
+    <string name="title_activity_opcoes">Options</string>
+    <string name="opcoes_listarContas">List Accounts</string>
+    <string name="opcoes_titulo">Options</string>
+    <string name="main_opcoes">Options</string>
+    <string name="main_relatorios">Reports</string>
+    <string name="title_activity_relatorio">Report</string>
+    <string name="title_activity_listar_contas">Accounts</string>
+    <string name="list_contas_nova">Insert account</string>
+    <string name="lbl_rel_contas">Bank accounts:</string>
+    <string name="lbl_rel_saldo">0</string>
+    <string name="lbl_rel_receitas">Total income:</string>
+    <string name="lbl_rel_total_receitas">0</string>
+    <string name="lbl_rel_despesas">Total expense:</string>
+    <string name="lbl_rel_total_despesas">0</string>
+    <string name="btn_conta_excluir">Delete</string>
+    <string name="Senhas">Passwords</string>
+    <string name="title_activity_listar_backup">ListBackupActivity</string>
+    <string name="title_activity_login">Login</string>
+    <string name="title_activity_file_browser">File searching</string>
+    <string name="title_activity_backup">Backup and Restore</string>
+    <string name="btn_make_backup">Create new backup</string>
+    <string name="btn_restore_backup">Restore backup</string>
+    <string name="btn_backup_restore">Backup/Restore</string>
+    <string name="btn_export_csv">Export to spreadsheet</string>
+    <string name="btn_password">Set Password</string>
+    <string name="title_activity_senha">Password register</string>
+    <string name="chk_protect_paswd">Protect with password</string>
+    <string name="edt_pasword_hint">Type a password</string>
+    <string name="edt_confirm_paswd_hint">Confirm the password</string>
+    <string name="edt_email_hint">Type your e-mail</string>
+    <string name="btn_save_paswd">Save</string>
+    <string name="btn_cancel_paswd">Cancel</string>
+    <string name="txt_type_paswd">Type your password</string>
+    <string name="btn_login">Come in</string>
+    <string name="title_activity_teste">TestActivity</string>
+    <string name="txt_movements_title">Movements</string>
+    <string name="txt_report_balance">Current balance:</string>
+    <string name="opt_income_movements">Incomes</string>
+    <string name="rad_incomes">Incomes</string>
+    <string name="rad_espenses">Expenses</string>
+    <string name="rad_expenses_incomes">Both</string>
+    <string name="txt_balance_movements">Balance:</string>
+    <string name="txt_descrition_main">Control personnel budget</string>
+    <string name="txt_chart_title_expenses">Expenses</string>
+    <string name="txt_chart_title_results">Results</string>
+    <string name="txt_chart_title_series">Value</string>
+    <string name="btn_update">Update</string>
+    <string name="btn_new_category">New Category</string>
+    <string name="btn_register">Register</string>
+    <string name="txt_category_description">Description</string>
+    <string name="txt_category_select">Select the type</string>
+    <string name="rad_cat_income">Income</string>
+    <string name="rad_cat_expense">Expense</string>
+    <string name="rad_cat_general">General</string>
+    <string name="txt_new_income">New Income</string>
+    <string name="txt_new_expense">New Expense</string>
+    <string name="btn_forgot_pass">I forgot the passord</string>
+    
+    
+    <!-- Messages -->
+    <string name="msg_success_insert">Success!</string>
+    <string name="msg_error_insert">An error has occurred!</string>
+    <string name="msg_success_update">Successful update!</string>
+    <string name="msg_confirm_delete">Are you sure you want to delete?</string>
+    <string name="msg_confirm_delete_title">Confirm Delete</string>
+    <string name="msg_deleted_sucess">Successfully deleted record</string>
+    <string name="msg_no_category">Select one category!</string>
+    <string name="msg_pass_sent">The password was sent to your email!</string>
+    
+    
+    <!-- Field errors -->
+    <string name="ferror_empty">This field is required</string>
+    
+    
+    <!-- Symbols -->
+    <string name="symbol_money">$ </string>
+    
+    
+
+</resources>

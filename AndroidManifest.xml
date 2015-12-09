@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="br.com.elenildo.orcabr"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="16"
+        android:targetSdkVersion="16" />
+
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:screenOrientation="portrait"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="br.com.elenildo.orcabr.LoginActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="br.com.elenildo.orcabr.MainActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="br.com.elenildo.orcabr.LancamentoActivity"
+            android:label="@string/title_activity_lancamento"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="br.com.elenildo.orcabr.ListarCategoriaActivity"
+            android:label="@string/title_activity_listar_categoria"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="br.com.elenildo.orcabr.CalendarActivity"
+            android:label="@string/title_activity_calendar" >
+        </activity>
+        <activity
+            android:name="br.com.elenildo.orcabr.NovaCategoriaActivity"
+            android:label="@string/title_activity_nova_categoria"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="br.com.elenildo.orcabr.ListarRegistrosActivity"
+            android:label="@string/title_activity_listar_registros">
+        </activity>
+        <activity
+            android:name="br.com.elenildo.orcabr.GraphActivity"
+            android:label="@string/title_activity_graph" >
+        </activity>
+        <activity
+            android:name="br.com.elenildo.orcabr.ContaActivity"
+            android:label="@string/title_activity_conta"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="br.com.elenildo.orcabr.OpcoesActivity"
+            android:label="@string/title_activity_opcoes"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="br.com.elenildo.orcabr.RelatorioActivity"
+            android:label="@string/title_activity_relatorio"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="br.com.elenildo.orcabr.ListarContasActivity"
+            android:label="@string/title_activity_listar_contas"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="br.com.elenildo.orcabr.ListarBackupActivity"
+            android:label="@string/title_activity_listar_backup" >
+        </activity>
+        <activity
+            android:name="br.com.elenildo.orcabr.FileBrowserActivity"
+            android:label="@string/title_activity_file_browser" >
+        </activity>
+        <activity
+            android:name="br.com.elenildo.orcabr.BackupActivity"
+            android:label="@string/title_activity_backup" >
+        </activity>
+        <activity
+            android:name="br.com.elenildo.orcabr.SenhaActivity"
+            android:label="@string/title_activity_senha" >
+        </activity>
+        <activity
+            android:name="br.com.elenildo.orcabr.TesteActivity"
+            android:label="@string/title_activity_teste" >
+        </activity>
+    </application>
+
+</manifest>

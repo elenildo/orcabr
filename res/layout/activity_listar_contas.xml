@@ -1,0 +1,40 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ListarContasActivity" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_weight="9"
+        android:layout_height="wrap_content" >
+
+        <ListView
+            android:id="@+id/lv_listar_contas"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+        </ListView>
+       
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#f0f0f0"
+        android:orientation="vertical" >
+
+        <Button
+            android:id="@+id/btn_nova_conta"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:onClick="abrirNovaConta"
+            android:text="@string/list_contas_nova" />
+
+    </RelativeLayout>
+
+</LinearLayout>

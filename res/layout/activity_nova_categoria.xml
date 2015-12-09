@@ -1,0 +1,82 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="5dp"
+    android:background="#a10c478d"
+    tools:context=".NovaCategoriaActivity" >
+
+    <TextView
+        android:id="@+id/lbl_Id_reg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/txt_category_description"
+        android:textColor="#FFF"
+        android:textSize="20sp" />
+
+    <EditText
+        android:id="@+id/txtDescricaoCategoria"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#fff"
+        android:textSize="20sp"
+        android:ems="10" >
+
+        <requestFocus />
+    </EditText>
+
+    <TextView
+        android:id="@+id/lbl_total"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        
+        android:paddingTop="20dp"
+        android:text="@string/txt_category_select"
+        android:textColor="#FFF"
+        android:textSize="20sp" />
+
+    <RadioGroup
+        android:id="@+id/radioGroup1"
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_marginBottom="50dp"
+        android:layout_height="wrap_content" >
+
+        <RadioButton
+            android:id="@+id/radGeral"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:text="@string/rad_cat_general"
+            android:textColor="#FFF"
+            android:textSize="20sp" />
+
+        <RadioButton
+            android:id="@+id/radDespesa"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/rad_cat_expense"
+            android:textColor="#FFF"
+            android:textSize="20sp" />
+
+        <RadioButton
+            android:id="@+id/radReceita"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/rad_cat_income"
+            android:textColor="#FFF"
+            android:textSize="20sp" />
+        
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/btnCadastrarCategoria"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="cadastrarClick"
+        android:text="@string/btn_register"
+        android:textColor="#FFF"
+        android:textSize="20sp" />
+
+</LinearLayout>
